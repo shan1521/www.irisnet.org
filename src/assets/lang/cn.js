@@ -4,36 +4,36 @@ export const message = {
     header:{
         left:[
             {
-                id:1,
+                id:0,
                 title:'白皮书',
                 active:false,
             },
             {
-                id:2,
+                id:1,
                 title:'合作方',
                 active:false,
             },
             {
-                id:3,
+                id:2,
                 title:'联系方式',
                 active:false,
             }
         ],
         right:[
             {
-                id:1,
+                id:0,
                 title:'主网',
                 href:'',
                 active: false,
             },
             {
-                id:2,
+                id:1,
                 title:'文档',
                 href:'https://www.irisnet.org/docs/',
                 active: false,
             },
             {
-                id:3,
+                id:2,
                 title:'博客',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -41,37 +41,37 @@ export const message = {
         ],
         mobileNavigation:[
             {
-                id:1,
+                id:0,
                 title:'主网',
                 activeIndex: '',
                 active:false,
             },
             {
-                id:2,
+                id:1,
                 title:'测试网',
                 activeIndex: '',
                 active:false,
             },
             {
-                id:3,
+                id:2,
                 title:'白皮书',
                 activeIndex: 0,
                 active:false,
             },
             {
-                id:4,
+                id:3,
                 title:'路线图',
                 activeIndex: 3,
                 active:false,
             },
             {
-                id:5,
+                id:4,
                 title:'合作方',
                 activeIndex: 1,
                 active:false,
             },
             {
-                id:6,
+                id:5,
                 title:'联系方式',
                 activeIndex: 2,
                 active:false,
@@ -96,27 +96,27 @@ export const message = {
         TechCommunityTitle: '技术社区',
         socialCommunity:[
             {
-                id:1,
+                id:0,
                 src: "irisnet_telegram.png",
                 href: "https://t.me/irisnetworkcn"
             },
             {
-                id:2,
+                id:1,
                 src: "irisnet_twitter.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
-                id:3,
+                id:2,
                 src: "irisnet_mail.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
-                id:4,
+                id:3,
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
-                id:1,
+                id:4,
                 src: "irisnet_wechat.png",
                 "txt": "Wechat"
             },
@@ -148,6 +148,52 @@ export const message = {
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
         ],
+        productList: [
+            {
+                id:0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id:1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id:2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/zh/light-client/'
+            },
+            {
+                id:3,
+                name:'CLI Client',
+                href:'https://www.irisnet.org/docs/zh/cli-client/'
+            }
+        ],
+        resourceList: [
+            {
+                id:0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id:1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id:2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/zh/'
+            },
+            {
+                id:3,
+                name:'Brand Assets',
+                href:'../../public/irisnet/resources/brandAssets.zip'
+            }
+        ],
+        productsTitle:'产品',
+        resourcesTitle:'资源',
         submitBtn:{
             title: '获取最新资讯',
             subscribe: '提交',
@@ -213,7 +259,6 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_bianjiehover.png', url: 'https://www.bianjie.ai/'},
                     {id:1, path: 'logos/irisnet_tenderminthover.png', url: 'https://tendermint.com/'}
-
                 ]
             },
             StrategicPartners: {
@@ -227,9 +272,7 @@ export const message = {
                 title: '生态合作伙伴',
                 logos: [
                     {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
-                    {id:1, path: 'logos/irisnet_hashquark.png', url: 'https://www.hashquark.io/#/'},
-                    {id:2, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
-
+                    {id:1, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
             Institutional: {
@@ -267,14 +310,13 @@ export const message = {
                     {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
                     {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
                     {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
-
                 ]
             }
         }
     },
     mainnet:{
         title: 'IRIS Network',
-        production: '用于构建可信分布式商业应用的跨链服务基础设施及协议',
+        production: '下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
         wallet: 'Rainbow 钱包',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
@@ -282,27 +324,36 @@ export const message = {
     },
     announcements:{
         title: '基金会公告',
-        viewMore: 'View More',
-        moreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+        viewMore: '查看更多',
+        viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'Betanet Work Plan',
         betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
         readMore:'Read more',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
         betaDate:'2019年2月1日',
         announcementList:[
             {
+                id:'0',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+                date:'2019年3月2日',
+                title:'IRISnet的公开地址',
+                content:'IRIS基金会和开发团队的地址'
+            },
+            {
                 id:'1',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
+                date:'2019年1月16日',
+                title:'对IRIS Betanet的期望',
+                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+            },
+            {
+                id:'2',
                 href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
                 date:'2019年1月16日',
                 title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
                 content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
             },
-            {
-                id:'2',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
-                date:'2019年1月16日',
-                title:'对IRIS Betanet的期望',
-                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
-            }
+           
         ]
     },
     testnet:{
@@ -315,17 +366,17 @@ export const message = {
         joinWay:[
             {
                 id:'1',
+                src:'irisnet_community_riot.png',
+                name: 'Riot聊天室',
+                linkName:'#irisvalidators:matrix.org',
+                href: 'https://riot.im/app/#/room/#iris:matrix.org'
+            },
+            {
+                id:'2',
                 src:'irisnet_community_qq.png',
                 name: 'QQ 群',
                 linkName:'834063323',
                 href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
-            },
-            {
-                id:'2',
-                src:'irisnet_community_riot.png',
-                name: 'Riot聊天室',
-                linkName:'#irisvalidators:matrix.org',
-                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
             }
         ]
     },
@@ -351,7 +402,6 @@ export const message = {
         walletTitle:'测试网钱包 Rainbow',
         walletHref:'https://testnet.rainbow.one/'
     },
-
     newsLetter:{
         successTitle: '欢迎订阅IRISnet通讯',
         failedTitle: '订阅失败。',
@@ -821,7 +871,7 @@ export const message = {
             {
                 'title': "How we collect personal data",
                 "txtList": [
-                    'We collect personal data about you in the following ways: ' +
+                    'We collect personal data about you in the following ways: ',
                     '<ul>' +
                     '<li>where you register for an account or to receive emails from us</li>' +
                     '<li>when you order products or services from us</li>' +
@@ -843,7 +893,7 @@ export const message = {
             {
                 'title': "Kinds of personal data we collect",
                 "txtList": [
-                    'The kinds of personal data that we collect and hold about you may include: ' +
+                    'The kinds of personal data that we collect and hold about you may include: ',
                     '<ul>' +
                     '<li>identifying information, such as your real name, nationality, ID type, ID number and other information required by the laws and regulations</li>' +
                     '<li>contact information, such as your postal address, email address and telephone number personal information</li>' +
@@ -861,7 +911,7 @@ export const message = {
             {
                 'title': "Purposes for which we use personal data",
                 "txtList": [
-                    'We use personal data that we collect about you for the following purposes: ' +
+                    'We use personal data that we collect about you for the following purposes: ',
                     '<ul>' +
                     '<li>to verify your identity when you are dealing with us</li>' +
                     '<li>to determine your eligibility for any of our products or services</li>' +
@@ -1217,20 +1267,6 @@ export const message = {
     "placehooder":{
         "placehooder": "请输入你的邮箱地址"
     },
-    "logo": [
-        {
-            "src": '../../../public/mainnet_zh.png',
-            "active": true
-        },
-        {
-            "src": '../../../public/bug_bounty.gif',
-            "active": false
-        },
-        {
-            "src": '../../../public/irisnet_zh.png',
-            "active": false
-        }
-    ],
     "mobileLogo": [
         {
             "src": '../../../public/mobile_main_zh.png',

@@ -99,7 +99,7 @@ export const message = {
             {
                 id:0,
                 src: "irisnet_telegram.png",
-                href: "https://t.me/irisnetworkcn"
+                href: "https://t.me/irisnetwork"
             },
             {
                 id:1,
@@ -151,6 +151,52 @@ export const message = {
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
         ],
+        productList: [
+            {
+                id: 0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id: 1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id: 2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/light-client/'
+            },
+            {
+                id: 3,
+                name:'CLI Client',
+                href:'https://www.irisnet.org/docs/cli-client/'
+            }
+        ],
+        resourceList: [
+            {
+                id: 0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id: 1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id: 2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/'
+            },
+            {
+                id: 3,
+                name:'Brand Assets',
+                href:'../../public/irisnet/resources/brandAssets.zip'
+            }
+        ],
+        productsTitle:'Products',
+        resourcesTitle:'Resources',
         submitBtn:{
             title: 'Newsletter',
             subscribe: 'Subscribe',
@@ -223,15 +269,13 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
                     {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
-
                 ]
             },
             EcosystemPartners: {
                 title: 'Ecosystem Partners',
                 logos: [
                     {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
-                    {id:1, path: 'logos/irisnet_hashquark.png', url: 'https://www.hashquark.io/#/'},
-                    {id:2, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                    {id:1, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
             Institutional: {
@@ -276,7 +320,7 @@ export const message = {
     // "logo": 'irisnet.png',
     mainnet:{
         title: 'IRIS Network',
-        production: 'Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications',
+        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self Evolutionary',
         wallet: 'Rainbow Wallet',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS Explorer',
@@ -285,56 +329,63 @@ export const message = {
     announcements:{
         title: 'Foundation Announcements',
         viewMore: 'View More',
-        moreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+        viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'Betanet Work Plan',
         betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
         readMore:'Read more',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
         betaDate:'Feb 1, 2019',
         announcementList:[
             {
-                id:'1',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
-                date:'Jan 16, 2019',
-                title:'IRIS Foundation Announces Plan for Betanet',
-                content:'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
+                id:'0',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+                date:'Mar 02,2019',
+                title:'IRISnet Public Token Addresses',
+                content:'Foundation and Dev Team Token Addresses.'
             },
             {
-                id:'2',
+                id:'1',
                 href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md',
                 date:'Jan 16, 2019',
                 title:'Expectations for IRIS Betanet',
                 content:'Expectations for IRIS Betanet\n' +
                 'To better prepare the community for participating in IRIS Betanet, we would like to communicate the expectations for this network:'
-            }
-           
+            },
+            {
+                id:'2',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
+                date:'Jan 16, 2019',
+                title:'IRIS Foundation Announces Plan for Betanet',
+                content:'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
+            },
         ]
     },
     testnet:{
-        title:'Fuxi Testnet',
+        title:'FUXI Testnet',
         production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
-        testnetLink:'Ues The Testnet'
+        testnetLink:'Ues FUXI Testnet'
     },
     community:{
         title: 'Join Tech Community',
         joinWay:[
             {
                 id:'1',
+                src:'irisnet_community_riot.png',
+                name: 'Riot room',
+                linkName:'#irisvalidators:matrix.org',
+                href: 'https://riot.im/app/#/room/#iris:matrix.org'
+            },
+            {
+                id:'2',
                 src:'irisnet_community_qq.png',
                 name: 'QQ group',
                 linkName:'834063323',
                 href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
-            },
-            {
-                id:'2',
-                src:'irisnet_community_riot.png',
-                name: 'Riot room',
-                linkName:'#irisvalidators:matrix.org',
-                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
             }
         ]
     },
     testnetPage:{
-        title: 'Fuxi Testnet',
+        title: 'FUXI Testnet',
         section:[
             {
                 content:'The previous iterations of the testnets have accomplished their mission. '
@@ -357,8 +408,8 @@ export const message = {
     },
     newsLetter:{
         successTitle: 'Welcome to The IRISnet Newsletter',
-        successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
         failedTitle: 'Subscription Failed',
+        successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
         failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
         confirm: 'Confirm'
     },
@@ -829,7 +880,7 @@ export const message = {
             {
                 'title': "How we collect personal data",
                 "txtList": [
-                    'We collect personal data about you in the following ways: ' +
+                    'We collect personal data about you in the following ways: ',
                     '<ul>' +
                     '<li>where you register for an account or to receive emails from us</li>' +
                     '<li>when you order products or services from us</li>' +
@@ -851,7 +902,7 @@ export const message = {
             {
                 'title': "Kinds of personal data we collect",
                 "txtList": [
-                    'The kinds of personal data that we collect and hold about you may include: ' +
+                    'The kinds of personal data that we collect and hold about you may include: ',
                     '<ul>' +
                     '<li>identifying information, such as your real name, nationality, ID type, ID number and other information required by the laws and regulations</li>' +
                     '<li>contact information, such as your postal address, email address and telephone number personal information</li>' +
@@ -869,7 +920,7 @@ export const message = {
             {
                 'title': "Purposes for which we use personal data",
                 "txtList": [
-                    'We use personal data that we collect about you for the following purposes: ' +
+                    'We use personal data that we collect about you for the following purposes: ',
                     '<ul>' +
                     '<li>to verify your identity when you are dealing with us</li>' +
                     '<li>to determine your eligibility for any of our products or services</li>' +

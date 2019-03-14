@@ -1,5 +1,4 @@
 <template>
-
     <div style="padding-top: 0.6rem;">
         <div class="mainnet_header_container">
             <div class="mainnet_header_wrap">
@@ -16,22 +15,24 @@
                 <div class="foundation_content">
                     <div class="title_content">
                         <h2 class="foundation_title">{{$store.state.messages.announcements.title}}</h2>
-                        <!--<p class="view_more_content">-->
-                            <!--<span class="view_more"><a :href="$store.state.messages.announcements.moreHref" target="_blank">{{$store.state.messages.announcements.viewMore}} <i class="triangle"></i></a></span>-->
-                        <!--</p>-->
+                        <p class="view_more_content">
+                            <span class="view_more"><a :href="$store.state.messages.announcements.viewMoreHref" target="_blank">{{$store.state.messages.announcements.viewMore}} <i class="triangle"></i></a></span>
+                        </p>
                     </div>
                     <div class="foundation_background_img">
                         <img src="../../public/irisnet/IRISnet_announcements_betanet.png">
                     </div>
                     <div class="betanet_container">
-                        <div class="betanet_content">
-                            <h3 class="betanet_title">{{$store.state.messages.announcements.betaTitle}}</h3>
-                            <p class="date_content">{{$store.state.messages.announcements.betaContent}}</p>
-                            <p class="read_more_content">
-                                <span class="read_more"><a :href="$store.state.messages.announcements.moreHref" target="_blank">{{$store.state.messages.announcements.readMore}} <i class="triangle"></i></a></span>
-                                <span class="date">{{$store.state.messages.announcements.betaDate}}</span>
-                            </p>
-                        </div>
+                        <a :href="$store.state.messages.announcements.readMoreHref" target="_blank">
+                            <div class="betanet_content">
+                                <h3 class="betanet_title">{{$store.state.messages.announcements.betaTitle}}</h3>
+                                <p class="date_content">{{$store.state.messages.announcements.betaContent}}</p>
+                                <p class="read_more_content">
+                                    <!--<span class="read_more"><a :href="$store.state.messages.announcements.readMoreHref" target="_blank">{{$store.state.messages.announcements.readMore}} <i class="triangle"></i></a></span>-->
+                                    <span class="date">{{$store.state.messages.announcements.betaDate}}</span>
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -94,8 +95,6 @@
                         path:`/testnets/?lang=${this.$route.query.lang}`
                     })
                 }
-
-
             },
             jumpUrl (url) {
                 window.open(url)
@@ -106,5 +105,4 @@
 
 <style scoped lang="less">
 @import "../assets/style/new_mainnet";
-
 </style>
