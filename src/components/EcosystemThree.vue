@@ -45,19 +45,19 @@
                     <div class="ecosystem_item_content_link_wrap"
                          v-if="$store.state.lang === 'CN'">
                         <div class="ecosystem_item_content_sub_container">
-                            <span class="ecosystem_item_content_sub_content">
+                            <span class="ecosystem_item_content_sub_content lesser_Link_Font_Size">
                                 {{$t("message.ecosystemThree.second.link1")}}
                             </span>
-                            <span class="ecosystem_item_content_sub_link"
+                            <span class="ecosystem_item_content_sub_link lesser_Link_Font_Size"
                                   @click="toLinkUrl($t('message.ecosystemThree.second.rainbowLink'))">
                                 {{$t("message.ecosystemThree.second.link2")}}
                             </span>
                         </div>
                         <div>
-                            <span class="ecosystem_item_content_sub_content">
+                            <span class="ecosystem_item_content_sub_content lesser_Link_Font_Size">
                                 {{$t("message.ecosystemThree.second.link3")}}
                             </span>
-                            <span class="ecosystem_item_content_sub_link"
+                            <span class="ecosystem_item_content_sub_link lesser_Link_Font_Size"
                                   @click="toLinkUrl($t('message.ecosystemThree.second.cosmosLink'))">
                                 {{$t("message.ecosystemThree.second.link4")}}
                             </span>
@@ -65,18 +65,18 @@
                     </div>
                     <div class="ecosystem_item_content_link_wrap"
                          v-else>
-                        <span class="ecosystem_item_content_sub_content">
+                        <span class="ecosystem_item_content_sub_content lesser_Link_Font_Size">
                             {{$t("message.ecosystemThree.second.link1")}}
                         </span>
-                        <span class="ecosystem_item_content_sub_link"
+                        <span class="ecosystem_item_content_sub_link lesser_Link_Font_Size"
                               @click="toLinkUrl($t('message.ecosystemThree.second.cosmosLink'))">
                             {{$t("message.ecosystemThree.second.link2")}}
                         </span>
                         <div class="ecosystem_item_content_sub_container">
-                            <span class="ecosystem_item_content_sub_content">
+                            <span class="ecosystem_item_content_sub_content lesser_Link_Font_Size">
                                 {{$t("message.ecosystemThree.second.link3")}}
                             </span>
-                            <span class="ecosystem_item_content_sub_link"
+                            <span class="ecosystem_item_content_sub_link lesser_Link_Font_Size"
                                   @click="toLinkUrl($t('message.ecosystemThree.second.rainbowLink'))">
                                 {{$t("message.ecosystemThree.second.link4")}}
                             </span>
@@ -349,7 +349,9 @@
                 margin-right: 0.05rem;
             }
         }
-
+        .lesser_Link_Font_Size{
+            font-size:0.17rem !important;
+        }
     }
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
@@ -525,6 +527,9 @@
             .ecosystem_item_content_link {
                 font-size: 0.14rem;
             }
+        }
+        .lesser_Link_Font_Size{
+            font-size:0.12rem !important;
         }
     }
 }

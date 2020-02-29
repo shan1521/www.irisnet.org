@@ -1,10 +1,10 @@
 <template>
     <div class="events_container">
         <div class="events_content_container">
-            <p class="events_content_title">
+            <p class="events_content_title" v-show="false">
                 {{$t('message.events.title')}}
             </p>
-            <div class="events_content_img_container">
+            <div class="events_content_img_container" v-show="false">
                 <div class="events_content_left_container"
                      v-for="item in firstList"
                      @click="toLinkUrl(item.href)">
@@ -23,9 +23,10 @@
                 </div>
             </div>
             <p class="events_history_title">
-                {{$t('message.announce.historyTitle')}}
+                {{$t('message.events.historyTitle')}}
             </p>
             <div class="events_history_item_container"
+                 :style="`${item.href?'cursor:pointer;':''}`"
                  @click="toLinkUrl(item.href)"
                  v-for="item in lastList">
                 <div class="events_history_item_time_container">
@@ -63,7 +64,7 @@
                 return this.$t('message.events.eventsList').slice(0,3);
             },
             lastList(){
-                return this.$t('message.events.eventsList').slice(3,7);
+                return this.$t('message.events.eventsList');
             }
         },
         mounted(){
@@ -88,7 +89,7 @@
             .events_content_container{
                 min-width:1rem;
                 max-width:12rem;
-                padding-top:1rem;
+                padding-top:0.8rem;
                 .events_content_title {
                     font-size:0.48rem;
                     margin-bottom:0.5rem;
@@ -124,7 +125,7 @@
             .events_history_title{
                 color:#313236;
                 font-size:0.48rem;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
                 margin-bottom:0.1rem;
             }
             .events_history_item_container{
@@ -179,7 +180,7 @@
             .events_history_title{
                 color:#313236;
                 font-size:0.36rem;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
                 margin-bottom:0.1rem;
             }
             .events_history_item_container{
@@ -235,7 +236,7 @@
             .events_history_title{
                 color:#313236;
                 font-size:0.18rem;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
             }
             .events_history_item_container{
                 .events_history_content_container{
@@ -252,7 +253,7 @@
     }
 
     .events_container {
-        padding-top:0.8rem;
+        padding:0.8rem 0.2rem 0 0.2rem;
         width:100%;
         box-sizing:border-box;
         .flexRow;
@@ -329,14 +330,13 @@
             }
             .events_history_title{
                 color:#313236;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
             }
             .events_history_item_container{
                 .flexRow;
                 width:100%;
                 padding:0.6rem 0;
                 border-bottom:0.01rem solid #EEEEEE;
-                cursor:pointer;
                 &:last-child{
                     border:none;
                 }
