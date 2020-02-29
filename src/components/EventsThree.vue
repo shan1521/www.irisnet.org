@@ -89,7 +89,7 @@
             .events_content_container{
                 min-width:1rem;
                 max-width:12rem;
-                padding-top:1rem;
+                padding-top:0.8rem;
                 .events_content_title {
                     font-size:0.48rem;
                     margin-bottom:0.5rem;
@@ -125,7 +125,7 @@
             .events_history_title{
                 color:#313236;
                 font-size:0.48rem;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
                 margin-bottom:0.1rem;
             }
             .events_history_item_container{
@@ -180,7 +180,7 @@
             .events_history_title{
                 color:#313236;
                 font-size:0.36rem;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
                 margin-bottom:0.1rem;
             }
             .events_history_item_container{
@@ -236,7 +236,7 @@
             .events_history_title{
                 color:#313236;
                 font-size:0.18rem;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
             }
             .events_history_item_container{
                 .events_history_content_container{
@@ -330,7 +330,7 @@
             }
             .events_history_title{
                 color:#313236;
-                margin-top:0.7rem;
+                margin-top:0.2rem;
             }
             .events_history_item_container{
                 .flexRow;
