@@ -110,22 +110,6 @@
             list:
                 [
                     {
-                        title: 'Development Teams',
-                        list:
-                            [
-                                {
-                                    name: 'BlockbeatHK',
-                                    link: '',
-                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/blockbeathk.png
-                                },
-                                {
-                                    name: 'Tendermint',
-                                    link: 'https://tendermint.com/',
-                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/tendermint.png
-                                }
-                            ]
-                    },
-                    {
                         title: 'Strategic Partners',
                         list:
                             [
