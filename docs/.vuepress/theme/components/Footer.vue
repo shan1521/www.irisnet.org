@@ -68,7 +68,7 @@
             <div class="footer_bottom">
                 <p class="community_intro">{{ footerInfo.bottomFooter.intro }}</p>
                 <p class="copyright_wrap">
-                    <span class="copyright">{{ footerInfo.bottomFooter.copyright }}</span>
+                    <span class="copyright">{{ formatCopyright }}</span>
                     <router-link
                         class="agreement"
                         v-for="(item, index) in footerInfo.bottomFooter.agreement"
@@ -125,6 +125,9 @@
                 );
                 const { inputBtn } = inputBtnInfo[0];
                 return inputBtn.dialogs;
+            },
+            formatCopyright() {
+                return this.footerInfo.bottomFooter.copyright;
             }
         },
         methods: {
